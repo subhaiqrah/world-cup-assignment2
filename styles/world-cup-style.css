@@ -1,0 +1,97 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@1,500&display=swap');
+/* common styles & utilities */
+body{
+    font-family:'Poppins', sans-serif;
+    background-color: white;
+}
+p{
+    font-size: 15px;
+}
+.button{
+    color: antiquewhite;
+    background-color: red;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+    
+}
+main{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    background-color: black;
+    font-size: 34px;
+    color: aliceblue;
+    width: 870px;
+    height: 350px;
+    padding: 50px;
+    margin-top: 21px;
+    border-radius: 10px;
+}
+.upcoming{
+    color: cornflowerblue;
+    background-color: black;
+    border: 1px solid black;
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.groups, .matches{
+    color: aliceblue;
+    color: black;
+}
+.blogs{
+    color: aliceblue;
+    background-color: red;
+}
+
+/* blog-img-style */
+
+.container2{
+   display: flex;
+    background-color: white;
+    font-size: 34px;
+    color: aliceblue;
+    width: 870px;
+    height: 300px;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+
+.transfer{
+    font-size: 21px;
+    color: black;
+    border: 2px solid wheat;
+    border-radius: 5px;
+}
+.transfers{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.transfer .blog-img img{
+    width: 100%;
+    height: 120px;
+
+}
+.game-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.box{font-family: Verdana, Geneva, Tahoma, sans-serif;background-image:linear-gradient(rgb(241, 163, 16),rgb(232, 187, 128)); color: rgb(31, 230, 213);padding-left: 11%; padding-top: 3%; padding-bottom: 3%; }
