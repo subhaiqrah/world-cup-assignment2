@@ -47,11 +47,11 @@ main{
     margin-right: 50px;
     margin-bottom: 100px;
 }
-.groups, .matches{
+.groups, .blogs{
     color: aliceblue;
     color: black;
 }
-.blogs{
+.matches{
     color: aliceblue;
     background-color: red;
 }
