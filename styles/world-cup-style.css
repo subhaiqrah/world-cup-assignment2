@@ -1,12 +1,16 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@1,500&display=swap');
-/* common styles & utilities */
+/*-------------- common styles & utilities-------------------- */
 body{
     font-family:'Poppins', sans-serif;
     background-color: white;
 }
+/* main{
+    margin-left: 10px;
+    margin-right: 10px;
+} */
 
-/* styles of banner */
+/*------------- styles of banner ------------*/
 
 .banner{
     display: grid;
@@ -41,19 +45,19 @@ body{
     width: 100%;
 }
 
-/* styles-for-article */
+/* ------------styles-for-article------------------- */
 .part-2{
     padding-top: 90px;
 }
 nav a {
     text-decoration: none;
     font-weight: 800;
-    color: chocolate;
+    color: rgb(222, 152, 96);
 
 }
-/* .match-details, .container{
+ /* .match-details, .container{
     display:grid;
-    grid-template-columns:repeat(2,1fr);} */
+    grid-template-columns:repeat(2,1fr);}  */
 .match-details{
     width: 312px;
     height: 262px;
@@ -73,10 +77,19 @@ nav a {
     text-align: center;
     border-radius: 5px;
 }
-.color{
+
+.details-3-color{
+    text-align: center;
     background-color: red;
+    padding: 17px;
+    margin: 15px;
+    border-radius: 5px;
 }
 .container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.article{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -148,20 +161,28 @@ footer{
 }
 
 
-/* media-quries */
+/*--------- media-quries----------- */
 
-/* for mobie devices */
+/* for mobile devices */
 @media screen and(max-width:688px) {
     body{
         margin: 0px;
     }
+    .part-2{
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    
+    
     .banner,
     .container,
     .more-info{
+        
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
 
     }
+    
 
 
     .banner h1{
@@ -169,17 +190,43 @@ footer{
         text-align: center;
     }
 
-    .banner .banner-image img{
+     .banner .banner-image img{
         width: 100%;
         height: 100%;
-    }
+    } 
 
     footer{
         text-align: center;
         width: 100%;
-        /* height: 100%; */
-        /* width: 28opx;
-        height: 450px; */
-
+       
     }
+   
 }
+
+
+/*----------- for tablet ----------------*/
+
+@media screen and (min-width:689px) and (max-width:992px) {
+
+    body{
+        margin: 0px;
+    }
+
+    .part-2{
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner,
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .special-button{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
