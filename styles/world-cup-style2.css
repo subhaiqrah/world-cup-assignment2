@@ -56,48 +56,51 @@ main{
     background-color: red;
 }
 
-/* blog-img-style */
-
-.container2{
-   display: flex;
-    background-color: white;
-    font-size: 34px;
-    color: aliceblue;
-    width: 1000px;
-    height: 700px;
-    padding-top: 40px;
-    border-radius: 10px;
+.up-trans{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-
+.flag-img{
+    display: flex;
+    justify-content: center;
+}
 .transfer{
-    font-size: 21px;
-    color: black;
-    border: 2px solid wheat;
-    border-radius: 5px;
+        font-size: 21px;
+        color: black;
+        border: 2px solid wheat;
+        border-radius: 5px;
 }
 .transfers{
-    grid-template-columns: repeat(3,1fr);
     display: grid;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
-.transfer .blog-img img{
-    width: 100%;
-    height: 120px;
-
-}
-.game-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 
 .box{
-    color: wheat;
+    color: aliceblue;
     background-color: black;
-     padding-left: 50%;
+    padding-left: 50%;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 10%
+}
+.centered1{
+    text-align: center;
+}
+
+/* mobile devices */
+@media screen and (max-width:688px) {
+    .transfers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .up-trans{
+        display: grid;
+
+    }
 }
