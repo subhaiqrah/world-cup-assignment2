@@ -5,119 +5,181 @@ body{
     font-family:'Poppins', sans-serif;
     background-color: white;
 }
-p{
-    font-size: 15px;
-}
-.button{
-    color: antiquewhite;
-    background-color: red;
-    font-size: 24px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 5px;
-    
-}
-main{
-    position: relative;
+
+/* styles of banner */
+
+.banner{
     display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    padding: 90px;
+    border-radius: 30px;
+    color: aliceblue;
+}
+
+.banner-text h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+.banner-text button{
+    background-color: red;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: 700;
+    padding: 16px 25px;
+    gap: 10px;
+
+}
+
+.banner .banner-image img{
+    width: 581px;
+    height: 613px;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+/* styles-for-article */
+.part-2{
+    padding-top: 90px;
+}
+nav a {
+    text-decoration: none;
+    font-weight: 800;
+    color: chocolate;
+
+}
+/* .match-details, .container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);} */
+.match-details{
+    width: 312px;
+    height: 262px;
+    background-color: black;
+    border-radius: 10px;
+ }
+.details{
+    padding: 15px;
+    border-radius: 10px;
+}
+.details-1,
+.details-2,
+.details-3{
+    background-color: white;
+    padding: 17px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.color{
+    background-color: red;
 }
 .container{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    font-size: 34px;
-    color: aliceblue;
-    width: 870px;
-    height: 350px;
-    padding: 50px;
-    margin-top: 21px;
-    border-radius: 10px;
-}
-.upcoming{
-    color: cornflowerblue;
-    background-color: black;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    margin-right: 50px;
-    margin-bottom: 100px;
-}
-.groups, .matches{
-    color: aliceblue;
-    color: black;
-}
-.blogs{
-    color: aliceblue;
-    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
-/* blog-img-style */
-
-.container2{
-   display: flex;
-   justify-content: center;
-    background-color: white;
-    font-size: 34px;
-    color: aliceblue;
-    width: 1000px;
-    height: 700px;
-    padding-top: 40px;
-    border-radius: 10px;
+.blog,
+.germany-vs-france{
+    width: 312px;
+    height: 362px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10PX;
+    margin: 24px;
 }
 
+.blog .thumnail img {
+    width: 312px;
+    height: 175px;
+    padding-bottom: 20px;
+}
+
+
+/* button- */
 .transfer{
-    font-size: 21px;
-    color: black;
-    border: 2px solid wheat;
+    width: 100px;
+    height: 32px;
     border-radius: 5px;
 }
-.transfers{
-    grid-template-columns: repeat(3,1fr);
-    display: grid;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-}
-.transfer .blog-img img{
-    width: 100%;
-    height: 120px;
 
-}
-.game-info{
+.blog-details{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.7);
 }
 
 
+/* footer */
 
-.box{
-    color: wheat;
-    background-color: black;
-     padding-left: 50%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-.centered{
+
+footer{
+    padding: 130px;
+    color: #E8E8E8;
     text-align: center;
+    background-color: #161616;
+    height: 300px;
+}
+
+.border{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.more-info{
+    color: #B9B9B9;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: none;
+}
+
+/* upcoming-match */
+
+.time{
+    color: #4D4D4D;
+}
+.germany-vs-france{
+    height: 200px;
+    text-align: center;
+    padding: 50px;
 }
 
 
+/* media-quries */
 
-/* mobile devices */
-@media screen and (max-width:688px) {
-    .container{
+/* for mobie devices */
+@media screen and(max-width:688px) {
+    body{
+        margin: 0px;
+    }
+    .banner,
+    .container,
+    .more-info{
         width: 100%;
-        display: grid;
-        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
 
     }
-    .transfers{
-        background-color: rgb(198, 238, 255);
-        grid-template-columns: repeat(1,1fr);
+
+
+    .banner h1{
+        font-size: 40px;
+        text-align: center;
     }
-    
+
+    .banner .banner-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        text-align: center;
+        width: 100%;
+        /* height: 100%; */
+        /* width: 28opx;
+        height: 450px; */
+
+    }
 }
